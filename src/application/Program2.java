@@ -24,6 +24,12 @@ public class Program2 {
 		dep2.setName("Food");
 		departmentDao.update(dep2);
 		System.out.println("Update completed");
+		
+		
+		//findById
+		System.out.println("\n=== TEST 3: department findById =====");
+		var department = departmentDao.findById(4);
+		System.out.println(department);
 	}
 
 }
